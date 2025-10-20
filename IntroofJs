@@ -1,0 +1,84 @@
+//alert:
+window.alert("Hi Welcome");
+
+//text content change:
+document.getElementById("mybtn").onclick=function(){
+    document.getElementById("myh1").textContent="Welcome";
+}
+
+//Arithmetic Operator:
+let a=100;
+// a+=10;
+// a-=10;
+// a*=10;
+// a/=10;
+// a%=10;
+// a**=10;
+console.log(a);
+
+//Type Conversion:
+let a="25";
+a=Number(a);
+a+=1;
+console.log(a);
+
+let x="word";
+let y="word";
+let z="word";
+x=Number(x);
+y=String(y);
+z=Boolean(z);
+console.log(x,typeof x);
+console.log(y,typeof y);
+console.log(z,typeof z);
+
+let x="0";
+let y="0";
+let z="0";
+x=Number(x);
+y=String(y);
+z=Boolean(z);
+console.log(x,typeof x);
+console.log(y,typeof y);
+console.log(z,typeof z);
+
+let x=0;
+let y=0;
+let z=0;
+x=Number(x);
+y=String(y);
+z=Boolean(z);
+console.log(x,typeof x);
+console.log(y,typeof y);
+console.log(z,typeof z);
+
+let x="";
+let y="";
+let z="";
+x=Number(x);
+y=String(y);
+z=Boolean(z);
+console.log(x,typeof x);
+console.log(y,typeof y);
+console.log(z,typeof z);
+
+let x;
+let y;
+let z;
+x=Number(x);
+y=String(y);
+z=Boolean(z);
+console.log(x,typeof x);
+console.log(y,typeof y);
+console.log(z,typeof z);
+
+//user input from easy way:
+let username;
+username=window.prompt("Enter the your name");
+console.log(username);
+
+//User input from professional way:
+document.getElementById("mybtn").onclick=function(){
+    let names=document.getElementById("name").value;
+    document.getElementById("myh2").textContent=names;
+}
