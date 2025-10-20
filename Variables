@@ -1,0 +1,77 @@
+//all usage:
+let name="Logu";
+var names="Logu";
+const namess="Logu";
+console.log(name);
+console.log(names);
+console.log(namess);
+
+//reassigning:
+let name="Logu";
+console.log(name);
+name="Senthil";
+console.log(name);
+
+var names="Logu";
+console.log(names);
+names="Senthil";
+console.log(names);
+
+const namess="Logu";
+console.log(namess);
+namess="Senthil";
+console.log(namess);
+
+
+//multiple declaration:
+let name="logu",age=22,city="Namakkal";
+console.log(`My name is ${name} and My age is ${age} and My City is ${city}`);
+
+
+//without let and var
+"use strict";
+a = 10;   
+console.log(a);
+
+//swapping with third variable:
+let a=10;
+let b=20;
+console.log(`Before Swapping: ${a} and ${b}`);
+let c=a;
+a=b;
+b=c;
+console.log(`After Swapping: ${a} and ${b}`);
+
+//swapping without third variable:
+let a=10,b=20;
+console.log(`Before Swapping: ${a} and ${b}`);
+a=a+b;
+b=a-b;
+a=a-b;
+console.log(`After Swapping: ${a} and ${b}`);
+
+//const variable:
+const pi=3.14;
+let r=5;
+console.log(`Area of the Circle is : ${pi*r*r}`);
+
+//same name:
+var age=22;
+let age=23;
+console.log(age);
+
+
+//let:
+{
+    let a=0;
+}
+console.log(a);
+
+//hoisting:
+console.log(name);
+var name="Logu";
+console.log(name);
+
+console.log(age);
+let age=22;
+console.log(age);
