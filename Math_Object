@@ -1,0 +1,18 @@
+let a=20.33;
+console.log(Math.round(a));
+console.log(Math.ceil(a));
+console.log(Math.floor(a));
+console.log(Math.trunc(a));
+console.log(Math.log(a));
+console.log(Math.sin(a));
+console.log(Math.cos(a));
+console.log(Math.tan(a));
+console.log(Math.min(10,20,89));
+console.log(Math.max(20,90,87));
+console.log(Math.random());
+console.log(Math.floor(Math.random()*6)+1);
+
+
+let min=50;
+let max=100;
+console.log(Math.floor(Math.random()*(max-min+1))+min);
