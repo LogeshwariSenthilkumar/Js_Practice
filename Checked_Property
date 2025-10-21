@@ -1,0 +1,29 @@
+const mycheck=document.getElementById("mycheck");
+const Visabtn=document.getElementById("Visabtn");
+const Mastercardbtn=document.getElementById("Mastercardbtn");
+const PayPalbtn=document.getElementById("PayPalbtn");
+const sub=document.getElementById("sub");
+const pay=document.getElementById("pay");
+const submitbtn=document.getElementById("submitbtn");
+
+submitbtn.onclick=function(){
+    if(mycheck.checked){
+        sub.textContent="You are Subcribed";
+    }
+    else{
+         sub.textContent="You are not Subcribed";
+    }
+
+    if(Visabtn.checked){
+        pay.textContent="You are Paying using Visa";
+    }
+    else if(Mastercardbtn.checked){
+         pay.textContent="You are Paying using Mastercard";
+    }
+    else if(PayPalbtn.checked){
+         pay.textContent="You are Paying using PayPal";
+    }
+    else{
+         pay.textContent="You Should Choose Payment Option";
+    }
+}
