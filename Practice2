@@ -1,0 +1,32 @@
+
+//String Methods:
+let name="Logeshwari";
+console.log(name.length);
+console.log(name.toUpperCase());
+console.log(name.toLowerCase());
+console.log(name.concat(" Senthilkumar"));
+console.log(name.split(" "));
+
+
+//Slice:
+let str="JavaScript";
+console.log(str.slice(0,4));
+console.log(str.substring(4));
+console.log(str.substr(1,3));
+console.log(str.slice(length-4));
+
+let gmail="logeshwari@gmail.com";
+let domain=gmail.slice(0,gmail.indexOf('@'));
+console.log(domain);
+
+
+//Method Chaining:
+let demo=" welcome to javascript ";
+demo=demo.trim().toUpperCase().replaceAll("JAVASCRIPT","PROGRAMMING");
+
+console.log(demo);
+
+let demo2="frontend developer";
+demo2=demo2.charAt(0).toUpperCase()+demo2.slice(1).replaceAll("developer","engineer");
+
+console.log(demo2);
