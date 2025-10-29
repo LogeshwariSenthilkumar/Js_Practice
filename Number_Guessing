@@ -1,0 +1,28 @@
+const min=50;
+const max=100;
+const number=Math.floor(Math.random()*(max-min+1))+min;
+console.log(number);
+let attempts=0;
+run=true;
+while(run){
+   let guess=window.prompt("Enter the Number between 50 to 100");
+if(isNaN(guess)){
+    window.alert("Enter Number Only");
+}
+else if(guess<50 || guess>100){
+    window.alert("Number should be 50 to 100 only");
+}
+else{
+    attempts++;
+    if(guess>number){
+        window.alert("Number is Too Large");
+    }
+    else if(guess<number){
+        window.alert("Number is Too small");
+    }
+    else{
+        window.alert(`Congrats you chose correct number ,you took ${attempts} attempts`);
+        run=false;
+    }
+}
+}
