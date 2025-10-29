@@ -1,0 +1,13 @@
+// let fullname="Logeshwari SenthilKumar";
+// let full="Bro Code";
+
+// // let firstname=full.slice(0,3);
+// // let lastname=full.slice(4);
+// // console.log(firstname);
+// // console.log(lastname);
+
+// let firstname=fullname.slice(0,fullname.indexOf(' '));
+// let lastname=fullname.slice(fullname.indexOf(' ')+1);
+
+// console.log(firstname);
+// console.log(lastname);
