@@ -1,0 +1,16 @@
+//string methods
+let name="Logeshwari";
+console.log(name.charAt(0));
+console.log(name.indexOf('o'));
+console.log(name.lastIndexOf('o'));
+console.log(name.trim());
+console.log(name.toUpperCase());
+console.log(name.toLowerCase());
+console.log(name.startsWith('L'));
+console.log(name.endsWith("i"));
+console.log(name.includes("g"));
+console.log(name.padStart(15,'0'));
+console.log(name.padEnd(15,'0'));
+console.log(name.repeat(3));
+console.log(name.replaceAll('o','e'));
+console.log(name.length);
