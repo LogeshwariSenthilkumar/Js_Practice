@@ -1,0 +1,29 @@
+//global scope::
+// let x=56;
+
+// function function1(){
+//     console.log(x);
+// }
+
+// function function2(){
+//     console.log(x);
+// }
+
+// function1();
+// function2();
+
+//local scope::
+
+// function function1(){
+//     let x=56;
+//     let y=90;
+//     console.log(x);
+// }
+
+// function function2(){
+//     let x=56;
+//     console.log(y);
+// }
+
+// function1();
+// function2();
