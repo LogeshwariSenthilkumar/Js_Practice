@@ -1,0 +1,17 @@
+//===
+// let a=3;
+// if(a==='3'){
+//     console.log("This is 3");
+// }
+// else{
+//     console.log("This is not 3");
+// }
+
+//!==
+// let b=3;
+// if(b!=='3'){
+//     console.log("Not 3");
+// }
+// else{
+//     console.log("3");
+// }
