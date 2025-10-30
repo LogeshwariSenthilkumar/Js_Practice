@@ -1,0 +1,11 @@
+let fruits=["Apple","Mango","Orange"];
+console.log(fruits);
+// fruits.unshift("Jackfruit");
+// fruits.shift();
+
+fruits.sort().reverse();
+
+for(let fruit of fruits){
+    console.log(fruit);
+}
+
