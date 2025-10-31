@@ -1,0 +1,39 @@
+// let numbers=[1,2,3,4,5];
+// function sum(accumulator,element){
+//   return accumulator+element;
+// }
+// let sums=numbers.reduce(sum);
+// console.log(sums);
+
+
+// let numbers=[15,25,5,40];
+// function maximum(accumulator,element){
+//   return Math.max(accumulator,element);
+// }
+// let max=numbers.reduce(maximum);
+// console.log(max);
+
+
+// let numbers=[2,3,4];
+// function multiply(accumulator,element){
+//   return accumulator*element;
+// }
+// let multi=numbers.reduce(multiply);
+// console.log(multi);
+
+
+// let word=["Js","is","fun"];
+// function total(accumulator,element){
+//   return accumulator+element.length;
+// }
+// let count=word.reduce(total,0);
+// console.log(count);
+
+
+
+// let words=["I","Love","JavaScript"];
+// function sentence(accumulator,element){
+//   return accumulator+" "+element;
+// }
+// let sen=words.reduce(sentence);
+// console.log(sen);
