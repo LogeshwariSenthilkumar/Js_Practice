@@ -1,0 +1,19 @@
+class Student{
+  constructor(name){
+    this.name=name;
+  }
+  set name(newname){
+    if(newname.length>0){
+      this._name=newname;
+    }
+    else{
+      console.error("Student Name Should not be Empty");
+    }
+  }
+  get name(){
+    return this._name;
+  }
+}
+const s1=new Student("Logeshwari");
+s1.name="Senthilkumar";
+console.log(s1.name);
