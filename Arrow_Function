@@ -1,0 +1,30 @@
+// let square=(number)=>console.log(Math.pow(number,2));
+// square(6);
+
+// let positive=(number)=>{
+//   if(number>0){
+//     console.log("Positive");
+//   }
+//   else if(number<0){
+//     console.log("Negative");
+//   }
+// }
+// positive(-3);
+
+// let sum=(num1,num2)=>{
+//   return num1+num2;
+// };
+// console.log(sum(2,3));
+
+// let fact=(num)=>{
+//   let fact=1;
+//   for(let i=1;i<=num;i++){
+//     fact=fact*i;
+//   }
+//   console.log(fact);
+// }
+// fact(5);
+
+// let greet=(name)=>console.log(`Hello, ${name}!`);
+// greet("Logeshwari");
+
