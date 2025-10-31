@@ -1,0 +1,36 @@
+class Person{
+  constructor(name,age){
+    this.name=name;
+    this.age=age;
+  }
+  displayInfo(){
+    console.log(`My Name is ${this.name} & My Age is : ${this.age}`);
+  }
+  isAdult(){
+    if(this.age>=18){
+      return true;
+    }
+    else{
+      return false;
+    }
+  }
+}
+
+const p1=new Person("Logu",22);
+p1.displayInfo();
+console.log("Is Adult:"+p1.isAdult());
+const p2=new Person("Janu",17);
+p2.displayInfo();
+console.log("Is Adult:"+p2.isAdult());
+
+
+class Circle{
+  constructor(radius){
+    this.radius=radius;
+  }
+  calculateArea(){
+    console.log(3.14*this.radius*this.radius);
+  }
+}
+const c1=new Circle(5);
+c1.calculateArea();
