@@ -1,0 +1,12 @@
+class MathUtil{
+  static add(a,b){
+    return a+b;
+  }
+  static multiply(a,b){
+    return a*b;
+  }
+}
+console.log(MathUtil.add(3,4));
+console.log(MathUtil.multiply(3,4));
+const m1=new MathUtil();
+console.log(m1.MathUtil.add(7,1));
