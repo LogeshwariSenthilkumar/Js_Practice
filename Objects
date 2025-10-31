@@ -1,0 +1,32 @@
+const student={
+  name:"Logeshwari",
+  age:22,
+  course:"cse",
+  greet:function() {
+    console.log("Hello! Logeshwari");
+  }
+}
+
+console.log(student.name);
+console.log(student.age);
+console.log(student.course);
+
+
+//adding::
+student.mark=89;
+console.log(student.mark);
+
+
+//deleting::
+delete student.mark;
+console.log(student.mark);
+
+
+//loop::
+for(let key in student){
+  console.log(`${key} :: ${student[key]}`);
+}
+
+//function::
+student.greet();
+
