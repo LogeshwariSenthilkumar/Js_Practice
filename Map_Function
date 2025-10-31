@@ -1,0 +1,35 @@
+// let numbers=[1,2,3,4,5];
+// let double=numbers.map(doubles);
+// console.log(double);
+// function doubles(element){
+//   return element*2;
+// }
+// function sqrt(element){
+//   return Math.sqrt(element);
+// }
+// let sqroots=numbers.map(sqrt);
+// console.log(sqroots);
+
+
+// let fruits=["apple","orange","mango"];
+// function toupper(element){
+//   return element.toUpperCase();
+// }
+// let uppercase=fruits.map(toupper);
+// console.log(uppercase);
+
+
+// let numbers=[2,4,6,8];
+// function add(element){
+//   return element+5;
+// }
+// let sums=numbers.map(add);
+// console.log(sums);
+
+
+// let numbers=[1,2,3];
+// function tostring(element){
+//   return String(element);
+// }
+// let str=numbers.map(tostring);
+// console.log(str);
