@@ -1,0 +1,33 @@
+// let square=function(number){
+//   console.log(Math.pow(number,2));
+// }
+// square(8);
+
+// let sum=function(num1,num2){
+//   console.log(num1+num2);
+// }
+// sum(5,4);
+
+// let even=function(number){
+//   if(number%2==0){
+//     console.log("Even");
+//   }
+//   else{
+//     console.log("Odd");
+//   }
+// }
+// even(4);
+
+// let len=function(str){
+//   console.log(str.length);
+// }
+// len("Logeshwari");
+
+// let reverse=function(str){
+//   let reverses="";
+//   for(let i=str.length-1;i>=0;i--){
+//     reverses+=str.charAt(i);
+//   }
+//   console.log(reverses);
+// }
+// reverse("Logeshwari");
