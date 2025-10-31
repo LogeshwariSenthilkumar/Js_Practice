@@ -1,0 +1,27 @@
+function Car(brand,model,year){
+  this.brand=brand;
+  this.model=model;
+  this.year=year;
+  this.msg=function(){
+    console.log(`The car brand is : ${this.brand}`);
+  }
+}
+
+//default property:
+Car.prototype.type="Vehicle";
+
+const car1=new Car("Toyata","Camry",2023);
+const car2=new Car("Hyundai","Verna",2024);
+
+console.log("----Car1----");
+console.log(car1.brand);
+console.log(car1.model);
+console.log(car1.year);
+console.log(car1.type);
+car1.msg();
+console.log("----Car2----");
+console.log(car2.brand);
+console.log(car2.model);
+console.log(car2.year);
+console.log(car2.type);
+car2.msg();
