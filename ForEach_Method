@@ -1,0 +1,36 @@
+// let numbers=[10,20,30,40,50];
+
+// function square(element,index,array){
+//   array[index]=Math.pow(element,2);
+// }
+
+// function display(element){
+//   console.log(element);
+// }
+
+// numbers.forEach(square);
+// numbers.forEach(display);
+
+// let fruits=["apple","orange","mango","banana"];
+// function toupper(element,index,array){
+//   array[index]=element.toUpperCase();
+// }
+// function display(element){
+//   console.log(element);
+// }
+// fruits.forEach(toupper);
+// fruits.forEach(display);
+
+// let numbers=[1,2,3,4,5];
+// let total=0;
+// function sum(element){
+//    total+=element;
+// }
+// numbers.forEach(sum);
+// console.log(total);
+
+// let numbers=[1,2,3,4,5];
+// function display(element,index){
+//   console.log(`Index : ${index} = value : ${element}`);
+// }
+// numbers.forEach(display);
