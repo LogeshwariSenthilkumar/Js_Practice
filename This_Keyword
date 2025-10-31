@@ -1,0 +1,30 @@
+// const student={
+//   name:"Logeshwari",
+//   display:function(){
+//     console.log(`My Name is <${this.name}>`);
+//   }
+// }
+// student.display();
+
+// const student={
+//   name:"logu",
+//   age:"22",
+//   display:function(){
+//      console.log(`My Name is : ${this.name}`);
+//   },
+//   show:()=>{
+//       console.log(`My Name is : ${this.name}`);
+//   }
+// }
+// student.display();
+// student.show();
+
+// const marks={
+//   mark1:90,
+//   mark2:78,
+//   mark3:98,
+//   total:function(){
+//        console.log(this.mark1+this.mark2+this.mark3);
+//   }
+// }
+// marks.total();
