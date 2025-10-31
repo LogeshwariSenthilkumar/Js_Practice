@@ -1,0 +1,35 @@
+// let numbers=[10,25,30,45,60];
+// function greater(element){
+//   return element>30;
+// }
+// function even(element){
+//   return element%2===0;
+// }
+// let num=numbers.filter(greater);
+// console.log(num);
+// let evennum=numbers.filter(even);
+// console.log(evennum);
+
+
+// let actions=["Go","Run","Come","played","Walking"];
+// function lengthfour(element){
+//   return element.length>4;
+// }
+// let len=actions.filter(lengthfour);
+// console.log(len);
+
+
+// let marks=[35,23,43,13,67,89];
+// function pass(element){
+//   return element>=35;
+// }
+// let passmarks=marks.filter(pass);
+// console.log(passmarks);
+
+
+// let numbers=[-2,3,-1,4,5];
+// function pos(element){
+//   return element>0;
+// }
+// let positive=numbers.filter(pos);
+// console.log(positive);
