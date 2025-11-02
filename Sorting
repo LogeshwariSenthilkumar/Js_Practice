@@ -1,0 +1,20 @@
+const numbers=[50,30,20,40,10];
+numbers.sort((a,b)=>a-b);
+console.log(numbers);
+
+numbers.sort((a,b)=>b-a);
+console.log(numbers);
+
+const fruits=["orange","apple","banana","grapes","mango"];
+fruits.sort();
+console.log(fruits);
+
+const student=["Logeshwari","Janani","Bharath"];
+student.sort((a,b)=>a.length-b.length);
+console.log(student);
+
+const marks=[35,90,55,70];
+marks.sort((a,b)=>b-a);
+console.log(marks);
+const top3=marks.splice(0,3);
+console.log(top3);
