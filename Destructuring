@@ -1,0 +1,74 @@
+// let a=10,b=20;
+// [a,b]=[b,a];
+// console.log(a,b);
+
+// let fruits=["apple","orange","mango","Banana"];
+// [fruits[0],fruits[2]]=[fruits[2],fruits[0]];
+// console.log(fruits);
+
+// let fruits=["apple","orange","mango","Banana"];
+// const [firstfruit,secondfruit,...extrafruits]=fruits;
+// console.log(firstfruit);
+// console.log(secondfruit);
+// console.log(extrafruits);
+
+// const person={
+//     firstName:"Logeshwari",
+//     lastName:"Senthilkumar",
+//     age:22
+// }
+// const{firstName,lastName,age}=person;
+// console.log(firstName);
+// console.log(lastName);
+// console.log(age);
+
+// const person={
+//     firstName:"Logeshwari",
+//     lastName:"Senthilkumar",
+//     age:22
+// }
+// display(person);
+// function display({firstName,lastName,age}){
+//    console.log(firstName);
+//    console.log(lastName);
+//    console.log(age);
+
+// }
+
+// const array=[10,20,30,40];
+// const [first,second]=array;
+// console.log(first);
+// console.log(second);
+
+
+// const person={
+//     name:"Logeshwari",
+//     age:21,
+//     city:"Karur"
+// }
+// const {name,age}=person;
+// console.log(name);
+// console.log(age);
+
+
+// let a=30,b=40;
+// [a,b]=[b,a];
+// console.log(a,b);
+
+
+
+// const array=[10,20,30,40,50,60];
+// const [first,second,...remaining]=array;
+// console.log(first);
+// console.log(second);
+// console.log(remaining);
+
+
+
+// function display(){
+//   return [10,20,30,40,50];
+// }
+// const [first,second,...extra]=display();
+// console.log(first);
+// console.log(second);
+// console.log(extra);
