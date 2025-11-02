@@ -1,0 +1,75 @@
+// const student={
+//     name:"Logeshwari",
+//     marks:{
+//         tamil:90,
+//         english:85,
+//         maths:95
+//     }
+// }
+// console.log(student.marks.maths);
+
+
+
+// const person={
+//    name:"Logu",
+//    age:22,
+//    hobbies:["Drawing","Making Arts"],
+//    address:{
+//     street:"East Street",
+//     District:"Namakkal",
+//     state:"Tamil Nadu"
+//    }
+// }
+// console.log(person.name);
+// console.log(person.age);
+// console.log(person.hobbies[1]);
+// console.log(person.address.District);
+
+
+// const student={
+//     name:"Logeshwari",
+//     marks:{
+//         tamil:90,
+//         english:85,
+//         maths:95
+//     }
+// }
+// const {english,maths}=student.marks;
+// console.log(english);
+// console.log(maths);
+
+
+// const student={
+//     name:"Logeshwari",
+//     marks:{
+//         tamil:90,
+//         english:85,
+//         maths:95
+//     }
+// }
+// student.marks.english=88;
+// console.log(student);
+
+
+
+// const student={
+//     name:"Logeshwari",
+//     marks:{
+//         tamil:90,
+//         english:85,
+//         maths:95
+//     }
+// }
+// function display(student){
+//    for(let key in student){
+//     if(typeof student[key]=="object" && student[key]!=null){
+//         console.log("Nested Object Found")
+//         display(student[key]);
+//     }
+//     else{
+//           console.log(`${key}:${student[key]}`);
+//     }
+//    }
+// }
+
+display(student);
