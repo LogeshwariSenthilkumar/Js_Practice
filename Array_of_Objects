@@ -1,0 +1,23 @@
+// const fruits=[
+//     {name:"apple",color:"red",calories:89},
+//     {name:"orange",color:"orange",calories:90},
+//      {name:"Banana",color:"yellow",calories:45}
+// ];
+// console.log(fruits[2].name);
+
+
+const students=[
+    {name:"Logu",mark:89},
+    {name:"Janu",mark:73},
+    {name:"Bharath",mark:90}
+];
+students.forEach((student)=>console.log(student.name));
+
+const above80=students.filter((student)=>student.mark>80);
+console.log(above80);
+
+const names=students.map((student)=>student.name);
+console.log(names);
+
+const highest=students.reduce((max,student)=>(student.mark>max.mark)?student:max);
+console.log(highest);
