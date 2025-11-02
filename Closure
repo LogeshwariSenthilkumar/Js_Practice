@@ -1,0 +1,50 @@
+// function outer(){
+//     let msg="hi";
+//     function inner(){
+//         console.log(msg);
+//     }
+//     inner();
+// }
+// outer();
+
+
+
+// function counter(){
+//     let count=0;
+//     function increment(){
+//         count++;
+//         console.log(`Count is incremented by ${count}`);
+//     }
+//     return {increment};
+// }
+// const c1=counter();
+// c1.increment();
+// c1.increment();
+
+
+// function outer(){
+//     let value=10;
+//     function getvalue(){
+//         console.log(value);
+//     }
+//     function update(values){
+//         value=values;
+//     }
+//     return{getvalue,update};
+// }
+// const v1=outer();
+// v1.getvalue();
+// v1.update(30);
+// v1.getvalue();
+
+
+// function multiples(){
+//     let number=20;
+//     function multiplyby(n){
+//         console.log(number*n);
+//     }
+//     return {multiplyby};
+// }
+// const m1=multiples();
+// m1.multiplyby(2);
+// m1.multiplyby(5);
