@@ -1,0 +1,72 @@
+ // let a=10;
+// let b=0;
+
+// try{
+//     if(b==0){
+//         throw new Error("B must not be Zero");
+//     }
+//    let c=a/b;
+//    console.log(c); 
+// }
+// catch(error){
+//   console.error(error);  
+// }
+// finally{
+//     console.log("Closing...");
+    
+// }
+// console.log("End...");
+
+
+// function inputcheck(){
+//     let num=window.prompt("Enter the number:");
+//     try{
+//         if(Number(num)<0){
+//             throw new Error("The Number Should not be Negative");
+//         }
+//     }
+//     catch(error){
+//         console.log(error);
+//     }
+//     console.log("end.....");
+    
+// }
+// inputcheck();
+
+
+// try{
+//     eval("console.log(x);");
+// }
+// catch(error){
+//     if(error instanceof SyntaxError){
+//         console.log(`SYNTAX ERROR ${error.message}`);    
+//     }
+//     else if(error instanceof ReferenceError){
+//         console.log(`REFERENCE ERROR ${error.message}`);
+//     }
+//     else{
+//          console.log(`SOME OTHER  ERROR ${error.message}`);
+//     }     
+// }
+
+
+
+// class Custom extends Error{
+//    constructor(message){
+//     super(message);
+//    }
+// }
+// let a=10;
+// let b=0;
+// try{
+//     if(b==0){
+//         throw new Custom("Not Zero");
+//     }
+//     let c=a/b;
+//     console.log(c);
+    
+// }
+// catch(error){
+//     console.error(error);
+// }
+// console.log("End...");
