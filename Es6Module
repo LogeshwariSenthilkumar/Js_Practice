@@ -1,0 +1,79 @@
+1.//math.js:
+export function add(a,b){
+    return a+b;
+}
+export function substract(a,b){
+    return a-b;
+}
+//main.js:
+import {add,substract} from './math.js';
+
+const addition=add(5,5);
+console.log(addition);
+
+const sub=substract(9,3);
+console.log(sub);
+
+
+2.//math.js:
+export default function greet(name){
+    console.log(`Hi! ${name}`);
+}
+export function multiply(a,b){
+    return a*b;
+}
+export function divide(a,b){
+    return a/b;
+}
+
+//main.js:
+import greet,{multiply,divide} from './math.js';
+
+greet("Logu");
+const mul=multiply(3,4);
+console.log(mul);
+
+const div=divide(10,5);
+console.log(div);
+
+
+
+3.,5.//cls.js:
+export const pi=3.1456;
+export class Student{
+    constructor(name,age){
+        this.name=name;
+        this.age=age;
+    }
+    display() {
+        console.log(`Name : ${this.name} , Age: ${this.age}`)
+    }
+}
+
+//main.js:
+import {Student,pi} from './cls.js';
+
+const s1=new Student("Logu",22);
+s1.display();
+
+const s2=new Student("Bharath",21);
+s2.display();
+
+console.log(pi);
+
+
+
+4.//main.js:
+
+import greet,{multiply as m,divide as d} from './math.js';
+
+greet("Logu");
+const mul=m(3,4);
+console.log(mul);
+
+const div=d(10,5);
+console.log(div);
+
+
+
+
