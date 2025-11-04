@@ -1,0 +1,83 @@
+//js::
+//1.
+const pid=document.getElementById("pid");
+pid.style.backgroundColor="red";
+pid.style.color="white";
+
+const pcls=document.getElementsByClassName("pcls");
+Array.from(pcls).forEach((cls)=>{
+cls.style.backgroundColor="yellow";
+cls.style.color="blue";
+}
+);
+
+const pquery=document.querySelector(".pcls1");
+pquery.style.backgroundColor="green";
+pquery.style.color="white";
+
+//3.,5.
+const pqueryall=document.querySelectorAll(".pcls2");
+pqueryall.forEach((cls)=>{
+    cls.style.backgroundColor="Black";
+    cls.style.color="white";
+
+});
+
+//2.
+const mydiv=document.getElementById("mydiv");
+mydiv.textContent="Welcome";
+mydiv.style.backgroundColor="tomato";
+mydiv.style.color="white";
+
+//3.
+const ul=document.getElementById("myul");
+const mybtn=document.getElementById("mybtn");
+let count=0;
+mybtn.onclick=function(){
+    count++;
+    const li=document.createElement("li");
+    li.textContent=`List-Item ${count}`;
+    ul.append(li);
+}
+
+//4.
+const mybtn2=document.getElementById("mybtn2");
+const myimg=document.getElementById("myimg");
+mybtn2.onclick=function(){
+    myimg.src="./images/s2.jpg";
+}
+
+//html::
+  <h1>Paragraph selected by id</h1>
+     <p id="pid">Parabyid</p>
+     <h1>Paragraph selected by class</h1>
+     <p class="pcls">para1bycls</p>
+     <p class="pcls">para2bycls</p>
+     <p class="pcls">para3bycls</p>
+     <p class="pcls">para4bycls</p>
+     <h1>Paragraph selected by queryselector</h1>
+     <p class="pcls1">para11bycls</p>
+     <p class="pcls1">para21bycls</p>
+     <p class="pcls1">para31bycls</p>
+     <p class="pcls1">para41bycls</p>
+     <h1>Paragraph selected by querySelectorAll</h1>
+     <p class="pcls2">para111bycls</p>
+     <p class="pcls2">para211bycls</p>
+     <p class="pcls2">para311bycls</p>
+     <p class="pcls2">para411bycls</p>
+     <h1>Div Element</h1>
+     <div id="mydiv">Hi</div>
+     <h1>Buttons</h1>
+     <button id="mybtn">Click me</button>
+     <ul id="myul"></ul>
+     <h1>My images</h1>
+     <img src="./images/s1.jpg" alt="shinshan" id="myimg" width="300px" height="200px"><br>
+     <button id="mybtn2">Clickme to change</button>
+
+
+
+
+
+
+
+
