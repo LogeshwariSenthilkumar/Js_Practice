@@ -1,0 +1,74 @@
+//Html::
+ <!-- <ul id="lists">
+        <li class="listitem1">List-item1</li>
+        <li class="listitem1">List-item2</li>
+        <li class="listitem1">List-item3</li>
+        <li class="listitem1">List-item4</li>
+    </ul> -->
+
+    <!-- <h1 id="myh1">Hi</h1>
+    <h2 id="myh2">Hello</h2>
+    <h3 id="myh3">Welcome</h3> -->
+     
+
+   <!-- <p id="pid">Paragraph-1</p>
+   <p id="p2id">Paragraph-2</p>
+   <button id="mybtn">Click me</button> -->
+
+
+   <!-- <div class="mydiv" id="divele">HELLO</div>
+   <p id="myp"></p> -->
+
+
+    <!-- <p class="para">Paragraph-1</p>
+    <p class="para">Paragraph-2</p>
+    <p class="para">Paragraph-3</p>
+    <p class="para">Paragraph-4</p> -->
+
+
+//js::
+// const lielements=document.querySelectorAll(".listitem1");
+// lielements.forEach(element => {
+//     element.style.backgroundColor="yellow";
+// });
+
+
+
+// const h1=document.getElementById("myh1");
+// const h2=document.getElementById("myh2");
+// const h3=document.getElementById("myh3");
+// h1.classList.add("property");
+// h2.classList.add("property");
+// h3.classList.add("property");
+
+
+// const mybtn=document.getElementById("mybtn");
+// const pid=document.getElementById("pid");
+// const p2id=document.getElementById("p2id");
+// p2id.classList.add("pcls");
+
+// mybtn.onclick=function(){
+//     pid.classList.toggle("property");
+//     p2id.classList.remove("pcls");
+// }
+
+
+// const divele=document.getElementById("divele");
+// const p=document.getElementById("myp");
+// if(divele.classList=="mydiv"){
+//    p.textContent="Yes";
+// }
+// else{
+//     p.textContent="No";
+// }
+
+
+
+// const paras=document.querySelectorAll(".para");
+// paras.forEach(element => {
+//     element.addEventListener("click",
+//         (event)=>{
+//            event.target.style.color="red";
+//         }
+//     )
+// });
