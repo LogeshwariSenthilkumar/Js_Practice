@@ -1,0 +1,72 @@
+//html::
+   <button id="mybtn">Click me</button><br>
+    <h1 id="myh1"></h1>
+    <div id="mydiv">Box</div><br><br>
+    <div id="mydiv2">Box2</div><br><br>
+    <p>Move the mouse</p>
+    <p id="p1">Coordinates: </p>
+
+//js::
+//1.
+const mybtn=document.getElementById("mybtn");
+const myh1=document.getElementById("myh1");
+mybtn.addEventListener("mouseover",(event)=>{
+    event.target.style.backgroundColor="Green";
+    event.target.style.color="white";
+});
+
+mybtn.addEventListener("mouseout",(event)=>{
+    event.target.style.backgroundColor="red";
+    event.target.style.color="black";
+});
+
+
+//2.
+mybtn.addEventListener("click",(event)=>{
+    event.target.style.backgroundColor="blue";
+    event.target.style.color="red";
+});
+mybtn.addEventListener("dblclick",()=>{
+   myh1.textContent="Welcome";
+});
+
+
+//3.
+const mydiv=document.getElementById("mydiv");
+
+mydiv.addEventListener("mousedown",
+    ()=>{
+        mydiv.style.width="200px";
+        mydiv.style.backgroundColor="red";
+        mydiv.style.height="200px";
+    }
+);
+mydiv.addEventListener("mouseup",
+    ()=>{
+         mydiv.style.width="100px";
+        mydiv.style.backgroundColor="black";
+        mydiv.style.height="100px";
+    }
+);
+
+//4.
+const myp1=document.getElementById("p1");
+document.addEventListener("mousemove",
+    (event)=>{
+        myp1.textContent+=`X : ${event.clientX} , Y : ${event.clientY}`;
+    }
+)
+
+//5.
+const mydiv2=document.getElementById("mydiv2");
+
+mydiv2.addEventListener("mouseenter",
+    ()=>{
+      document.body.style.backgroundColor="lightgrey";
+    }
+);
+mydiv2.addEventListener("mouseleave",
+    ()=>{
+      document.body.style.backgroundColor="white";
+    }
+);
