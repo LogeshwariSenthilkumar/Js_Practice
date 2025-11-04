@@ -1,0 +1,65 @@
+//html::
+    <h1>Question -1</h1>
+    <input type="text" id="ipbox"><br><br>
+    <p id="msg"></p>
+    <h1>Question -2</h1>
+    <input type="text" id="ipbox2">
+    <p>Key Pressed by user</p>
+    <p id="myp1"></p>
+    <h1>Question -4</h1>
+    <p id="myp2"></p>
+     <h1>Question -3</h1>
+     <input type="text" id="ipbox3">
+
+   <h1>Question -5</h1>
+     <input type="text" id="ipbox4">
+
+//js::
+//1.
+const ipbox=document.getElementById("ipbox");
+const msg=document.getElementById("msg");
+
+ipbox.addEventListener("keydown",
+    ()=>{
+        msg.textContent="Typing...";
+    }
+);
+
+//2,4.
+const p1=document.getElementById("myp1");
+const p2=document.getElementById("myp2");
+const ipbox2=document.getElementById("ipbox2");
+let count=0;
+ipbox2.addEventListener("keydown",(event)=>{
+  p1.textContent+=`${event.key}`;
+});
+ipbox2.addEventListener("keyup",()=>{
+  count++;
+  p2.textContent=`COUNT : ${count}`;
+});
+
+
+
+//3.
+const ipbox3=document.getElementById("ipbox3");
+
+
+ipbox3.addEventListener("keydown",
+    (event)=>{
+        if(event.key=="Enter"){
+          window.alert("Enter is Pressed!!!");
+        }
+    }
+);
+
+//5.
+const ipbox4=document.getElementById("ipbox4");
+
+ipbox4.addEventListener("keydown",(event)=>{
+    if(event.key>='0' && event.key<='9' || event.key==="Backspace" || event.key==="Tab"|| event.key.startsWith("Arrow")){
+        return;
+    }
+    else{
+        event.preventDefault();
+    }
+});
