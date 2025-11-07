@@ -1,0 +1,84 @@
+//Variables:
+let first_name="Logeshwari";
+let last_name="Senthilkumar";
+console.log(first_name,last_name);
+
+
+if(true){
+    let a=10;
+    console.log(a);
+}
+console.log(a);
+
+//if-else:
+let num=10;
+if(num%7==0){
+    console.log("Divisible by 7");
+}
+else{
+    console.log("Not Divisible by 7");
+    
+}
+
+let numb=10;
+if(numb>0){
+if(numb%2==0){
+console.log("Positive and Even");
+}
+else{
+console.log("Positive and Odd");
+}
+}
+else{
+console.log("Negative Number");
+}
+
+
+//Ternary operator:
+let temp=30;
+let msg=(temp>30)?"Hot Weather":"Cold Weather";
+console.log(msg);
+
+
+let price=80;
+let discount=(price>50)?20:0;
+console.log((price-discount)*100/100);
+
+
+//switch:
+let colors=1;
+switch (colors) {
+    case 1:
+        console.log("Green");
+        break;
+    case 2:
+        console.log("Red");
+        break;
+    case 3:
+        console.log("Yellow");
+        break;
+    default:
+        console.log("Choose valid Color");
+        break;
+}
+
+let num1=20;
+let num2=10;
+let choices='-';
+switch (choices) {
+    case '+':
+        console.log(num1+num2);
+        break;
+    case '-':
+        console.log(num1-num2);
+        break;
+    case '*':
+        console.log(num1*num2);
+        break;
+    case '/':
+        console.log(num1/num2);
+        break;
+    default:
+        console.log("Choose valid option");
+        break;
+}
