@@ -82,3 +82,200 @@ switch (choices) {
         console.log("Choose valid option");
         break;
 }
+
+
+//Strind Methods:
+let username=window.prompt("Enter the Name");
+console.log(username.trim().toLowerCase());
+
+let username="I like Js programming and programming is easy to";
+console.log(username.replace('programming','Coding'));
+
+
+//slicing:
+let email="user@gmail.com";
+console.log(email.slice(0,email.indexOf("@")));
+console.log(email.slice(-3));
+
+//Method chaining:
+let sentence="I like Js Programming";
+sentence=sentence.trim().split(" ").map(sentence=>sentence+"=>"+sentence.length);
+console.log(sentence);
+
+let username="   Logeshwari";
+username=username.trim().includes("i");
+console.log(username);
+
+
+//while Loop:
+let nums=[10,20,30,5,0,15];
+let sum=0,i=0;
+while (nums[i]!=0) {
+    sum+=nums[i];
+    i++;
+}
+console.log(sum);
+
+let username="Logeshwari";
+let len=username.length-1;
+let reverse="";
+while (len>=0) {
+    reverse+=username.charAt(len);
+    len--;
+}
+console.log(reverse);
+
+
+//for loop:
+let fact=1;
+let num=5;
+for(let i=1;i<=num;i++){
+    fact=fact*i;
+}
+console.log(fact);
+
+let num=5;
+for(let i=1;i<=10;i++){
+    console.log(`${i}x${num}=${i*num}`);
+}
+
+
+//function:
+let flag=0;
+function primenum(num) {
+    if(num==0 || num==1){
+     return "Not a Prime Number";
+    }
+    else{
+        for(let i=2;i<num;i++){
+        if(num%i==0){
+            flag=1;
+            break;
+           }
+         }
+        if(flag==0){
+        return "Prime Number";
+        }
+        else{
+            return "Not a Prime Number"
+        }
+    }
+}
+console.log(primenum(7));
+
+let name="logeshwari";
+captialize(name);
+function captialize(name) {
+    let first=name.charAt(0).toUpperCase();
+    let remaining=name.slice(1).toLowerCase();
+    console.log(first+remaining);
+    
+}
+
+//foreach:
+let items=["ListItem1","ListItem2","ListItem3","ListItem4"];
+const lists=document.getElementById("lists");
+items.forEach((item)=>{
+    const li=document.createElement("li");
+    li.textContent=item;
+lists.append(li);
+});
+
+
+let numbers=[2,2,3,4,7,5];
+let total=0;
+numbers.forEach((number)=>{
+  total+=number;
+});
+console.log(total);
+
+
+//map:
+let numbers=[0,1,0,0,1,1];
+let booleans=numbers.map(number=>{
+    if(number==0){
+        return false;
+    }
+    else{
+        return true;
+    }
+})
+console.log(booleans);
+
+let dates=['20240304','20250305','20240514'];
+let formatteddates=dates.map((date)=>{
+    const year=date.slice(0,4);
+    const month=date.slice(4,6);
+    const dat=date.slice(6);
+    return (`${dat}/${month}/${year}`);
+});
+console.log(formatteddates);
+
+
+//filter:
+let arrays=[0,"",null,false];
+let falsy=arrays.filter((array)=>{
+    return array!=0 || array!=false;
+})
+console.log(falsy);
+
+let numbers=[10,20,30,40,50];
+let divby=numbers.filter((number)=>{
+    return number%20==0;
+})
+console.log(divby);
+
+
+//reduce:
+const items=['book','pen','book','pen','pencil','pen'];
+let occurence=items.reduce((acc,item)=>{
+acc[item]=(acc[item]||0)+1;
+return acc;
+},{});
+console.log(occurence);
+
+const arr2d=[[1,2],[3,4]];
+const arr=arr2d.reduce((acc,num)=>{
+return acc.concat(num);
+},[]);
+console.log(arr);
+
+//function expressions:
+
+let palindrome=function(number) {
+    let reverse="";
+    let original=number;
+    let digit;
+    while(number>0){
+        digit=number%10;
+        number=Math.floor(number/10);
+        reverse+=digit;
+    }
+    if(reverse==original){
+        console.log("Yes it is Palindrome");
+    }
+    else{
+        console.log("Not a Palindrome");
+        
+    }
+}
+palindrome(101);
+
+
+let add=function(num1,num2){
+    console.log(num1+num2);
+}
+add(7,6);
+add(8,9);
+
+
+//arrow functions:
+let msg=()=>console.log("Hi");
+msg();
+
+
+setTimeout(() => {
+    console.log("Hi,Logu");
+}, 3000);
+
+
