@@ -278,4 +278,340 @@ setTimeout(() => {
     console.log("Hi,Logu");
 }, 3000);
 
+//Object:
+const book={
+    name:"book1",
+    id:101,
+    year:2024
+}
+console.log(book.name);
+console.log(book.id);
+console.log(book.year);
+book.price=100;
+console.log(book.price);
+console.log(book);
+
+
+
+
+const person={
+    name:"Logu",
+    age:22,
+    hobbies:"Making Arts"
+}
+console.log(person);
+for(let key in person){
+    console.log(`${key}:${person[key]}`);   
+}
+
+
+//this keyword:
+const person={
+    name:"Logeshwari",
+    age:22,
+    display(){
+        console.log(this.name);
+    }
+}
+const func1=person.display;
+func1();
+const func2=person.display.bind(name);
+func2();
+
+
+person.display();
+
+
+
+const Person={
+    name:"Logu",
+    age:22,
+    display(){
+        console.log(this.name);
+    },
+    disp:()=>{
+        console.log(this.name);     
+    }
+}
+Person.display();
+Person.disp();
+
+
+//constructor:
+function Student{
+        this.name=name;
+        this.age=age;
+        this.info= function() {
+          console.log(`${this.name},${this.age}`); }
+   
+}
+const s1=new Student("Logeshwari",22);
+s1.info();
+const s2=new Student("Janani",21);
+s2.info();
+
+
+//classes:
+
+class Circle{
+    radius=5;
+    area(){
+       console.log(3.14*5*5);
+    }
+    static greet(){
+        console.log("Completed");
+    }
+}
+const c1=new Circle();
+c1.area();
+Circle.greet();
+
+
+//static keyword:
+class Counter{
+    static count=0;
+    static increment(){
+        Counter.count++;
+        console.log(Counter.count);
+    }
+}
+Counter.increment();
+Counter.increment();
+
+const h1=new Counter();
+h1.increment(4);
+
+
+
+//Inheritance:
+class Vehicle{
+    display(){
+        console.log("Vehicle Class");
+    }
+}
+class Car extends Vehicle{
+    carinfo(){
+        console.log("Car Info");
+    }
+}
+const c1=new Car();
+c1.display();
+c1.carinfo();
+
+
+class Vehicle{
+    display(){
+        console.log("Vehicle Class");
+    }
+}
+class Car extends Vehicle{
+    display(){
+        super.display();
+        console.log("Car Class");
+    }
+}
+const c1=new Car();
+c1.display();
+
+
+//super:
+
+
+
+
+
+
+
+
+
+
+
+class Student
+{
+    constructor(name,age){
+        this.name=name;
+        this.age=age;
+    }
+    display(){
+        console.log(`Name:${this.name},Age:${this.age}`);
+    }
+}
+class Address extends Student{
+    constructor(name,age,state,city){
+        super(name,age);
+        this.state=state;
+        this.city=city;
+    }
+    show(){
+        super.display();
+        console.log(`City:${this.city},State:${this.state}`);
+    }
+}
+
+const a1=new Address("Logu",22,"Tamil nadu","Namakkal");
+a1.show();
+
+
+
+
+class Student
+{
+    constructor(name,age){
+        this.name=name;
+        this.age=age;
+    }
+    display(){
+        console.log(`Name:${this.name},Age:${this.age}`);
+    }
+}
+class Address extends Student{
+    constructor(name,age,state,city){
+        super(name,age);
+        this.state=state;
+        this.city=city;
+    }
+    display(){
+        super.display();
+        console.log(`City:${this.city},State:${this.state}`);
+    }
+}
+
+const a1=new Address("Logu",22,"Tamil nadu","Namakkal");
+a1.display();
+
+
+
+//getters and setters:
+
+
+
+class Person{
+    constructor(firstname,lastname){
+        this.firstname=firstname;
+        this.lastname=lastname;
+    }
+    set firstname(newfirstname){
+        if(newfirstname.length>0 && newfirstname!=" "){
+            this._firstname=newfirstname;
+        }
+        else{
+            console.error("FirstName should not be empty");
+        }
+    }
+        set lastname(newlastname){
+        if(newlastname.length>0 && newlastname!=" "){
+            this._lastname=newlastname;
+        }
+        else{
+            console.error("LastName should not be empty");
+        }
+    }
+
+    get firstname(){
+        return this._firstname;
+    }
+    get lastname(){
+        return this._lastname;
+    }
+    get fullName(){
+        return this.firstname+" "+this.lastname;
+    }
+}
+
+const p1=new Person("Logeshwari","SenthilKumar");
+
+console.log(p1.fullName);
+
+
+//Destructing:
+let friuts=["Apple","Orange","Mango","PineApple"];
+[firstFriut,...remainingFriuts]=friuts;
+console.log(firstFriut);
+console.log(remainingFriuts);
+
+const person={
+    name:"Logu",
+    age:22,
+    hobby:"Making Arts"
+}
+display(person);
+function display({name,age,hobby}){
+console.log(name);
+console.log(age);
+console.log(hobby);
+}
+
+//Nested Objects:
+const person={
+    name:"Logu",
+    age:22,
+    address:{
+        street:"East street",
+        city:"Namakkal"
+    }
+}
+console.log(person.name);
+let olddata=person.age;
+console.log(person.address.street);
+person.age=23;
+let newdata=person.age;
+console.log(`Comparsion:${Math.abs(olddata-newdata)}`);
+
+
+//Array of Objects:
+let students=[{name:"Logu",marks:78},
+            {name:"Bharath",marks:88},
+            {name:"Janani",marks:64},
+            {name:"Hari",marks:55}];
+
+let marksbyfilter=students.filter((student)=>{
+    return student.marks>75;
+});
+console.log(marksbyfilter);
+
+const computemarks=students.map(student=>student.marks).reduce((a,b)=>a+b)/students.length;
+console.log(computemarks);
+
+
+//Sorting:
+let numbers=[3,7,9,1,2,8];
+numbers.sort((a,b)=>b-a);
+console.log(numbers.splice(0,3));
+
+
+let fruits=["orange","apple","mango","pineapple","Apple","Mango"];
+fruits.sort((a,b)=>a.toLowerCase().localeCompare(b.toLowerCase()));
+console.log(fruits);
+
+
+//Shuffle array:
+let arr=[1,2,3,4,5];
+console.log(arr);
+shuffle(arr);
+console.log(arr);
+function shuffle(elements) {
+    for(let i=elements.length-1;i>0;i--){
+        const random=Math.floor(Math.random()*(i+1));
+        [arr[i],arr[random]]=[arr[random],arr[i]];
+    }
+}
+
+
+
+
+
+let arr2=[1,2,3,4,5];
+console.log(arr2);
+let array=[...arr2];
+shuffles(array);
+console.log(array);
+console.log(arr2);
+
+function shuffles(elements) {
+    let newarr=elements;
+    for(let i=elements.length-1;i>0;i--){
+        const random=Math.floor(Math.random()*(i+1));
+        [newarr[i],newarr[random]]=[newarr[random],newarr[i]];
+    }
+}
 
